@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+   <script>
+      //  const prod = {
+      //   name: 'socks',
+      //   price: 1090,
+      //  };
+      //  console.log(prod);
+      //  console.log(prod.price);
+
+      //  prod.name = "Tosin"
+      //  console.log(prod.name);
+
+      //  prod.newProp = true;
+      //  console.log(prod)
+
+      //  delete prod.name
+      //  console.log(typeof prod)
+
+      // const prod2 = {
+      //   name:'shirt',
+      //   'delivery-time': '1 day',
+      //   rating:{
+      //     stars:4.5,
+      //     count:87
+      //   },fun: function func1s(){
+      //     console.log('function inside an object')
+      //   }
+      // };
+      // console.log(prod2)
+      // console.log(prod2.name)
+      // console.log(prod2['name'])
+      // console.log(prod2['delivery-time'])
+      // prod2.fun()
+
+      // console.log(JSON.stringify(prod2))
+      // const jsonString =JSON.stringify(prod2)
+      // console.log(JSON.parse(jsonString))
+
+
+
+      console.log('hello'.length)
+      console.log('oluwatosin'.toUpperCase())
+      const obj1 = {
+        mssg: 'hello'
+      };
+      const obj2 = obj1;
+
+      obj1.mssg = 'Good'
+
+      console.log(obj1)
+      console.log(obj2)
+
+      const obj3 = {
+        mssg:'Good'
+      }
+      console.log(obj1 === obj2)
+
+      
+      const obj4 = {
+        mssg:'Good',
+        price:799
+      }
+      // const mssg = obj4.mssg
+      const {mssg,price} = obj4 // destructuring -- taking properties out of an object 
+      // console.log(mssg)
+      // console.log(price)
+
+      const object5 = {
+        // message:mssg
+        mssg,
+        // method: function function1(){
+        //   console.log('methodss');
+        // }
+        method(){
+          console.log('meythods')
+        }
+      }
+      console.log(object5)
+      object5.method()
+   </script>
+  </body>
+</html>

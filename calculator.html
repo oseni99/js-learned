@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="
+    calc = '1'
+    console.log(calc);
+    ">1</button>
+  <button onclick="
+    calc += '2'
+    console.log(calc);
+  ">2</button>
+  <button onclick="
+    calc += '3'
+    console.log(calc);
+  ">3</button>
+  <button onclick="
+    calc = `${calc} + `
+    console.log(calc);
+  ">+</button>
+  <button onclick="
+    calc = eval(calc)
+    console.log(calc);
+  ">=</button>
+ 
+
+  <script>
+    let calc = ""
+  </script>
+</body>
+</html>
